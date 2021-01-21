@@ -1,0 +1,140 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+body {
+  font-size: 14px;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 1em;
+    background-color: transparent;
+  }
+}
+
+body,
+input,
+textarea {
+  font-family: 'PingFangSC-Medium', 'PingFangSC', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+    Roboto, 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, 'sans-serif';
+}
+
+input {
+  color: #222222;
+  font-size: 14px;
+}
+
+input::-webkit-input-placeholder {
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+.comm-button {
+  width: 120px;
+  padding: 0;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  /* color: rgba(85, 85, 85, 1); */
+}
+
+.comm-button-primary {
+  /* color: rgba(255, 255, 255, 1); */
+}
+
+.dialog-form-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 1);
+  line-height: 25px;
+}
+
+.table-buttons-popover {
+  min-width: auto;
+  margin-top: 10px !important;
+  & .more-buttons {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  & .el-link {
+    margin-right: 20px;
+    color: #0081f0;
+  }
+
+  & .el-link:last-child {
+    margin: 0;
+  }
+}
+.apply-info {
+  & .middle-button {
+    margin-bottom: 20px;
+  }
+}
+.search-form {
+  padding-top: 16px;
+  & >>> .el-dialog__header {
+    padding-bottom: 0;
+  }
+  & >>> .el-dialog__body {
+    padding-top: 0;
+  }
+  & >>> .el-dialog {
+    width: 950px;
+  }
+  & >>> .comm-dialog {
+    width: 1200px;
+  }
+  & .middle-button {
+    margin-bottom: 20px;
+    display: flex;
+    & .el-button--primary {
+      background-color: #0081f0;
+      border-color: #0081f0;
+    }
+    & .random-task {
+      cursor: pointer;
+      line-height: 32px;
+      color: #fff;
+      padding: 0 20px 0 32px;
+      background: url(../assets/distribution.png) 10px center no-repeat #0081f0;
+      border-radius: 3px;
+      border-color: #0081f0;
+    }
+  }
+}
+
+thead {
+  & .table-required-label .cell {
+    &::before {
+      content: '*';
+      color: #f56c6c;
+      margin-right: 4px;
+    }
+  }
+}
+.file-uploader {
+  & .el-upload-dragger {
+    width: auto;
+    height: auto;
+  }
+}
